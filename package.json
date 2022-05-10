@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "dev": "concurrently 'cd frontend && npm run dev' 'cd backend && npm run dev'",
-    "build": "concurrently 'cd frontend && npm install && npm run build' 'cd backend && npm install && npm run build'",
+    "build": "concurrently 'cd frontend && npm install && npm run build' 'cd backend && npm install'",
     "start": "concurrently 'cd frontend && npm run start' 'cd backend && npm run start'",
     "seeder": "",
     "test": "echo \"Error: no test specified\" && exit 1",
