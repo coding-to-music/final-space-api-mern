@@ -8,9 +8,9 @@
     ".next/cache"
   ],
   "scripts": {
-    "dev": "",
-    "build": "",
-    "start": "",
+    "dev": "concurrently 'cd frontend && npm run dev' 'cd backend && npm run dev'",
+    "build": "concurrently 'cd frontend && npm run build' 'cd backend && npm run build'",
+    "start": "concurrently 'cd frontend && npm run start' 'cd backend && npm run start'",
     "seeder": "",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "git add . && git commit -m Build && git push && vercel --prod"
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/lelouchB/final-space-api/issues"
   },
-  "homepage": "https://github.com/lelouchB/final-space-api#readme"
+  "homepage": "https://github.com/lelouchB/final-space-api#readme",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
 }
