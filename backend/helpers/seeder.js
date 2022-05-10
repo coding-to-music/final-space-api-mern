@@ -6,7 +6,7 @@ const axios = require("axios")
 const Character = require("../models/character.model")
 const Episode = require("../models/episode.model")
 const Location = require("../models/location.model")
-const database_url = process.env.DATABASE_URL
+const database_url = process.env.MONGODB_URI
 
 const seedCharacters = async () => {
   const charactersEndpoint = "https://finalspaceapi.com/api/v0/character"
